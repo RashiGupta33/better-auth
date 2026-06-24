@@ -29,9 +29,9 @@ export default function ReadmeTab() {
 
                 {/* CLI Box Component */}
                 <div className="mb-6">
-                  <div className="mb-6 rounded-md border border-foreground/[0.1] relative">
+                  <div className="mb-6 border border-neutral-100 dark:border-neutral-900 relative">
                     {/* Tabs */}
-                    <div className="flex items-center border-b border-foreground/[0.1]">
+                    <div className="flex items-center border-b border-neutral-100 dark:border-neutral-900">
                       <button className="px-4 py-2 text-[12px] transition-colors duration-150 relative text-neutral-800 dark:text-neutral-200">
                         CLI
                         <div className="absolute bottom-0 left-4 right-4 h-[1.5px] bg-neutral-600 dark:bg-neutral-400" />
@@ -95,9 +95,9 @@ export default function ReadmeTab() {
 
                 {/* Trusted By Divider */}
                 <div className="flex items-center gap-3 my-4">
-                  <div className="flex-1 border-t border-foreground/6" />
+                  <div className="flex-1 border-t border-black/[0.1]" />
 
-                  <span className="text-[11px] sm:text-xs text-foreground/50 font-mono tracking-wider uppercase shrink-0">
+                  <span className="text-[12px] sm:text-xs text-black/[0.5] font-mono tracking-wider uppercase shrink-0">
                     Trusted By
                   </span>
                 </div>
