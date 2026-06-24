@@ -1,3 +1,5 @@
+import logo from "../assets/vite.svg";
+
 export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-[99] flex items-start bg-white">
@@ -5,14 +7,15 @@ export default function Navbar() {
       <div className="w-[40%] h-[44px] hidden lg:flex items-stretch shrink-0 border-r border-black/[0.06] px-7">
         <a
           href="/"
-          className="flex h-full items-center px-4"
+          className="flex h-full items-center justify-center px-2"
         >
           <img
-            src="/better-auth-logo.svg"
+            src={logo}
             alt="BETTER-AUTH."
             className="h-[20px] w-auto"
           />
         </a>
+        <p className="pt-3 sm:pt-3 text-neutral-800 dark:text-neutral-200 font-medium">BETTER-AUTH.</p>
       </div>
 
       {/* Right Navigation */}
