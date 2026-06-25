@@ -9,10 +9,7 @@ function App() {
 
       <div className="flex pt-[44px]">
         <HeroLeft />
-
-        {/* <div className="w-full lg:w-[60%]"> */}
         <ReadmeSection />
-        {/* </div> */}
       </div>
     </div>
   );

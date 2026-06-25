@@ -247,7 +247,7 @@ export default function HeroLeft() {
           items-center
           text-[11px]
           font-mono
-          text-black/50
+          text-black/40
           z-[3]
         "
       >

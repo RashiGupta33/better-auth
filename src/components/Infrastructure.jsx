@@ -1,5 +1,7 @@
 import { Shield } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import infra from "../assets/Infra.png";
+import contributors from "../assets/contributors.png";
 
 export default function Infrastructure() {
     const sentinelFeatures = [
@@ -95,68 +97,59 @@ export default function Infrastructure() {
                 </div>
 
                 <div
-                    className="relative z-10 overflow-hidden border border-foreground/[0.08]"
+                    className="relative z-10 overflow-hidden border border-black/10"
                     style={{
-                        maskImage: "linear-gradient(black 60%, transparent 100%)",
-                        WebkitMaskImage: "linear-gradient(black 60%, transparent 100%)",
+                        maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
+                        WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
                     }}
                 >
-                    <div className="flex items-center justify-between px-4 py-2 bg-foreground/[0.02] border-b border-foreground/[0.06]">
-                        <div className="flex items-center gap-2">
-                            <div className="flex items-center gap-1.5">
-                                <span className="size-2 rounded-full bg-foreground/10"></span>
-                                <span className="size-2 rounded-full bg-foreground/10"></span>
-                                <span className="size-2 rounded-full bg-foreground/10"></span>
-                            </div>
+                    <img
+                        src={infra}
+                        alt="Dashboard"
+                        className="block w-full h-auto select-none"
+                        draggable={false}
+                    />
 
-                            <span className="text-[10px] font-mono text-foreground/30 ml-2">
-                                dash.better-auth.com
-                            </span>
-                        </div>
-
-                        <div className="flex items-center gap-3">
-                            <span className="text-[9px] font-mono uppercase tracking-wider text-foreground/50">
-                                Overview
-                            </span>
-                            <span className="text-[9px] font-mono uppercase tracking-wider text-foreground/20">
-                                Users
-                            </span>
-                            <span className="text-[9px] font-mono uppercase tracking-wider text-foreground/20">
-                                Orgs
-                            </span>
-                            <span className="text-[9px] font-mono uppercase tracking-wider text-foreground/20">
-                                Events
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="overflow-hidden">
-                        <video
-                            src="/demo-dark.mp4"
-                            autoPlay
-                            loop
-                            playsInline
-                            className="w-full h-auto -mt-[2px] dark:block hidden"
-                        />
-
-                        <video
-                            src="/demo-light.mp4"
-                            autoPlay
-                            loop
-                            playsInline
-                            className="w-full h-auto -mt-[2px] dark:hidden"
-                        />
-                    </div>
                 </div>
             </div>
 
             <div className="relative z-10 grid grid-cols-1 sm:grid-cols-3 -mt-4 -mx-px">
+                <div
+                    className="absolute top-0 bottom-0 z-0 pointer-events-none"
+                    style={{
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        width: "100vw",
+                        maskImage:
+                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                        WebkitMaskImage:
+                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                    }}
+                >
+                    <div className="absolute inset-0 bg-neutral-200/20 dark:bg-black/30"></div>
+
+                    <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07]">
+                        <svg className="w-full h-full">
+                            <filter id="infra-grain">
+                                <feTurbulence
+                                    type="fractalNoise"
+                                    baseFrequency="0.85"
+                                    numOctaves="4"
+                                    stitchTiles="stitch"
+                                />
+                                <feColorMatrix type="saturate" values="0" />
+                            </filter>
+
+                            <rect width="100%" height="100%" filter="url(#infra-grain)" />
+                        </svg>
+                    </div>
+                </div>
                 {sections.map((section) => (
                     <div
                         key={section.title}
-                        className="relative overflow-hidden border-t border-r border-b border-dashed border-foreground/[0.06] first:border-l first:-mt-px p-4"
+                        className="relative overflow-hidden border-t border-r border-b border-dashed border-black/20 first:border-l first:-mt-px p-4"
                     >
-                        <h4 className="relative text-[11px] sm:text-xs font-mono font-semibold uppercase tracking-widest text-foreground/90 dark:text-foreground/75 mb-3">
+                        <h4 className="relative text-[12px] sm:text-xs font-mono font-semibold uppercase tracking-widest text-black/80 dark:text-foreground/75 mb-3">
                             {section.title}
                         </h4>
 
@@ -164,9 +157,9 @@ export default function Infrastructure() {
                             {section.items.map((item) => (
                                 <li
                                     key={item}
-                                    className="flex items-start gap-2 text-[13px] sm:text-[14px] text-foreground/70 dark:text-foreground/55"
+                                    className="flex items-start gap-2 text-[13px] sm:text-[14px] text-black/70 dark:text-black/60"
                                 >
-                                    <span className="text-foreground/40">+</span>
+                                    <span className="text-black/30">+</span>
                                     <span>{item}</span>
                                 </li>
                             ))}
@@ -175,7 +168,37 @@ export default function Infrastructure() {
                 ))}
             </div>
 
-            <div className="relative z-10 border border-dashed border-foreground/[0.06] -mt-px -mx-px p-4">
+            <div className="relative z-10 border border-dashed border-black/20 -mt-px -mx-px p-4">
+                <div
+                    className="absolute top-0 bottom-0 z-0 pointer-events-none"
+                    style={{
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        width: "100vw",
+                        maskImage:
+                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                        WebkitMaskImage:
+                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                    }}
+                >
+                    <div className="absolute inset-0 bg-neutral-200/20 dark:bg-black/30"></div>
+
+                    <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07]">
+                        <svg className="w-full h-full">
+                            <filter id="infra-grain">
+                                <feTurbulence
+                                    type="fractalNoise"
+                                    baseFrequency="0.85"
+                                    numOctaves="4"
+                                    stitchTiles="stitch"
+                                />
+                                <feColorMatrix type="saturate" values="0" />
+                            </filter>
+
+                            <rect width="100%" height="100%" filter="url(#infra-grain)" />
+                        </svg>
+                    </div>
+                </div>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                     {/* Left */}
                     <div className="sm:w-1/3">
@@ -183,15 +206,15 @@ export default function Infrastructure() {
                             <Shield
                                 size={12}
                                 strokeWidth={1.5}
-                                className="text-foreground/70"
+                                className="text-black/30"
                             />
 
-                            <h4 className="text-[11px] sm:text-xs font-mono font-semibold uppercase tracking-widest text-foreground/90 dark:text-foreground/75">
+                            <h4 className="text-[11px] sm:text-xs font-mono font-semibold uppercase tracking-widest text-black/80 dark:text-foreground/75">
                                 Sentinel
                             </h4>
                         </div>
 
-                        <p className="text-[13px] sm:text-[14px] text-foreground/60 dark:text-foreground/50 leading-relaxed">
+                        <p className="text-[13px] sm:text-[14px] text-black/70 dark:text-black/60 leading-relaxed">
                             Real-time threat detection before it reaches your users.
                         </p>
                     </div>
@@ -201,7 +224,7 @@ export default function Infrastructure() {
                         {sentinelFeatures.map((feature) => (
                             <span
                                 key={feature}
-                                className="inline-flex items-center px-2 py-1 text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-foreground/70 dark:text-foreground/55 border border-foreground/[0.12] bg-foreground/[0.03] hover:bg-foreground/[0.06] hover:text-foreground/80 dark:hover:text-foreground/65 transition-colors"
+                                className="inline-flex items-center px-2 py-1 text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-black/40 dark:text-foreground/55 border border-foreground/[0.12] bg-foreground/[0.03] hover:bg-foreground/[0.06] hover:text-foreground/80 dark:hover:text-foreground/65 transition-colors"
                             >
                                 {feature}
                             </span>
@@ -210,21 +233,51 @@ export default function Infrastructure() {
                 </div>
             </div>
 
-            <div className="relative z-10 flex items-center justify-between mt-4 px-6 py-5 border border-dashed border-foreground/[0.08] bg-foreground/[0.01]">
+            <div className="relative z-10 flex items-center justify-between mt-4 px-6 py-5 border border-dashed border-black/20 bg-foreground/[0.01]">
+                <div
+                    className="absolute top-0 bottom-0 z-0 pointer-events-none"
+                    style={{
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        width: "100vw",
+                        maskImage:
+                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                        WebkitMaskImage:
+                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                    }}
+                >
+                    <div className="absolute inset-0 bg-neutral-200/20 dark:bg-black/30"></div>
+
+                    <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07]">
+                        <svg className="w-full h-full">
+                            <filter id="infra-grain">
+                                <feTurbulence
+                                    type="fractalNoise"
+                                    baseFrequency="0.85"
+                                    numOctaves="4"
+                                    stitchTiles="stitch"
+                                />
+                                <feColorMatrix type="saturate" values="0" />
+                            </filter>
+
+                            <rect width="100%" height="100%" filter="url(#infra-grain)" />
+                        </svg>
+                    </div>
+                </div>
                 <div className="flex flex-col gap-0.5">
                     <span className="text-[13px] sm:text-[14px] font-medium text-foreground/90 dark:text-foreground/85">
                         Explore plans
                     </span>
 
-                    <span className="text-[11px] sm:text-[12px] text-foreground/75 dark:text-foreground/60">
+                    <span className="text-[11px] sm:text-[12px] text-black/75 dark:text-foreground/60">
                         Dashboard, audit logs, security detection, transactional comms, and
                         more.
                     </span>
                 </div>
 
                 <a
-                    href="/pricing"
-                    className="inline-flex items-center gap-1.5 shrink-0 ml-4 px-4 py-2.5 bg-foreground text-background hover:opacity-90 transition-all font-mono text-[11px] uppercase tracking-widest group"
+                    href="#"
+                    className="inline-flex items-center gap-1.5 shrink-0 ml-4 px-4 py-2.5 bg-black/90 !text-white/100 hover:opacity-80 hover:cursor-pointer transition-all font-mono text-[11px] uppercase tracking-widest group"
                 >
                     View Plans
                     <ArrowRight
@@ -268,8 +321,29 @@ export default function Infrastructure() {
                     }}
                 />
 
+                <div className="pt-8">
+                    <div className="flex items-center gap-4 mb-2">
+                        <span className="text-lg font-medium text-foreground/90 dark:text-foreground/80 tracking-tight shrink-0">
+                            Contributors
+                        </span>
+                        <div className="flex-1 border-t border-black/10">
+                        </div>
+                    </div>
+                    <p className="text-[13px] text-black/50 dark:text-black/40 mb-5 leading-relaxed">
+                        Built by a community of
+                        <span className="text-black/80 dark:text-foreground/60 font-medium tabular-nums">
+                            {" "} 874+</span> contributors.
+                    </p>
+                    <img
+                        src={contributors}
+                        alt="Contributors"
+                        className="block w-full h-auto select-none"
+                        draggable={false}
+                    />
+                </div>
+
                 <div className="relative space-y-6">
-                    <p className="text-center text-lg text-balance text-foreground/60 dark:text-foreground/50 tracking-tight">
+                    <p className="text-center text-lg text-balance text-black/60 dark:text-foreground/50 tracking-tight">
                         Roll your own auth with confidence in minutes.
                     </p>
 
@@ -284,7 +358,7 @@ export default function Infrastructure() {
 
                                 {/* NPM SVG */}
                                 <svg
-                                    className="size-[11px] -translate-y-px"
+                                    className="size-[11px] -translate-y-px text-black/50"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="1.2em"
                                     height="1.2em"
@@ -295,12 +369,12 @@ export default function Infrastructure() {
                                         d="M0 7.062C0 3.225 3.225 0 7.062 0h113.88c3.838 0 7.063 3.225 7.063 7.062v113.88c0 3.838-3.225 7.063-7.063 7.063H7.062c-3.837 0-7.062-3.225-7.062-7.063zm23.69 97.518h40.395l.05-58.532h19.494l-.05 58.581h19.543l.05-78.075l-78.075-.1l-.1 78.126z"
                                     />
                                     <path
-                                        className="fill-background"
+                                        className="fill-background text-black/50"
                                         d="M25.105 65.52V26.512H40.96c8.72 0 26.274.034 39.008.075l23.153.075v77.866H83.645v-58.54H64.057v58.54H25.105z"
                                     />
                                 </svg>
 
-                                <span className="text-xs font-mono">
+                                <span className="text-xs font-mono text-black/50">
                                     4.6M / week
                                 </span>
                             </div>
@@ -323,12 +397,12 @@ export default function Infrastructure() {
                                     strokeWidth="2"
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
-                                    className="size-[11px] -translate-y-px"
+                                    className="size-[11px] -translate-y-px text-black/50"
                                 >
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                                 </svg>
 
-                                <span className="text-xs font-mono">
+                                <span className="text-xs font-mono text-black/50 dark:text-black/60">
                                     29k stars
                                 </span>
 
@@ -341,39 +415,71 @@ export default function Infrastructure() {
                         {/* Get Started Button */}
                         <a
                             href="/docs/installation"
-                            className="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 bg-neutral-900 text-neutral-100 dark:bg-neutral-100 dark:text-neutral-900 text-xs sm:text-sm font-medium hover:opacity-90 transition-colors"
+                            className="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 bg-neutral-900 !text-neutral-100 dark:bg-neutral-100 dark:text-neutral-900 text-xs sm:text-sm font-medium hover:opacity-90 transition-colors"
                         >
                             Get Started
                         </a>
 
                         {/* Sign In Button */}
                         <a
-                            href="https://dash.better-auth.com/sign-in"
-                            className="relative inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 text-neutral-600 dark:text-neutral-300 text-xs sm:text-sm font-medium transition-colors group"
+                            href="#"
+                            className="
+      relative
+      inline-flex
+      items-center
+      gap-1.5
+      px-4
+      sm:px-5
+      py-2
+      text-neutral-600
+      dark:text-neutral-300
+      text-xs
+      sm:text-sm
+      font-medium
+      transition-colors
+      group
+    "
                         >
                             <span
-                                className="absolute inset-0 opacity-[0.04] group-hover:opacity-[0.08] transition-opacity"
+                                className="
+        absolute
+        inset-0
+        opacity-[0.04]
+        group-hover:opacity-[0.08]
+        transition-opacity
+      "
                                 style={{
                                     backgroundImage:
                                         "repeating-linear-gradient(-45deg, transparent, transparent 4px, currentColor 4px, currentColor 5px)",
                                 }}
                             />
 
-                            <span className="absolute top-0 -left-[6px] -right-[6px] h-px bg-foreground/20 group-hover:bg-foreground/30 transition-colors" />
+                            <span className="absolute top-0 -left-[6px] -right-[6px] h-px bg-black/20 group-hover:bg-black/30 transition-colors" />
 
-                            <span className="absolute bottom-0 -left-[6px] -right-[6px] h-px bg-foreground/20 group-hover:bg-foreground/30 transition-colors" />
+                            <span className="absolute bottom-0 -left-[6px] -right-[6px] h-px bg-black/20 group-hover:bg-black/30 transition-colors" />
 
-                            <span className="absolute left-0 -top-[6px] -bottom-[6px] w-px bg-foreground/20 group-hover:bg-foreground/30 transition-colors" />
+                            <span className="absolute left-0 -top-[6px] -bottom-[6px] w-px bg-black/20 group-hover:bg-black/30 transition-colors" />
 
-                            <span className="absolute right-0 -top-[6px] -bottom-[6px] w-px bg-foreground/20 group-hover:bg-foreground/30 transition-colors" />
+                            <span className="absolute right-0 -top-[6px] -bottom-[6px] w-px bg-black/20 group-hover:bg-black/30 transition-colors" />
 
-                            <span className="absolute -bottom-[6px] -right-[6px] font-mono text-[8px] text-foreground/40 dark:text-foreground/50 leading-none select-none translate-x-1/2 translate-y-1/2">
+                            <span
+                                className="
+        absolute
+        -bottom-[6px]
+        -right-[6px]
+        font-mono
+        text-[8px]
+        text-black/40
+        leading-none
+        select-none
+        translate-x-1/2
+        translate-y-1/2
+      "
+                            >
                                 +
                             </span>
 
-                            <span className="relative">
-                                Sign In
-                            </span>
+                            <span className="relative">Sign In</span>
                         </a>
 
                     </div>
