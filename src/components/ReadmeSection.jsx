@@ -1,49 +1,4 @@
 export default function ReadmeTab() {
-
-  const features = [
-    {
-      id: "01",
-      title: "Works with your stack.",
-      description:
-        "Next.js, Nuxt, SvelteKit, Astro, Hono, and 20+ more.",
-      icons: <>...</>,
-    },
-    {
-      id: "02",
-      title: "Built-in credential auth.",
-      description:
-        "Sessions, email verification, and password reset included.",
-      icons: <>...</>,
-    },
-    {
-      id: "03",
-      title: "Social sign-on.",
-      description:
-        "Google, GitHub, Apple, Discord, and more.",
-      icons: <>...</>,
-    },
-    {
-      id: "04",
-      title: "Multi-tenancy built in.",
-      description:
-        "Teams, roles, invitations, and access control.",
-      icons: <>...</>,
-    },
-    {
-      id: "05",
-      title: "Enterprise ready.",
-      description:
-        "SSO, SAML 2.0, SCIM, and directory sync.",
-      icons: <>...</>,
-    },
-    {
-      id: "06",
-      title: "50+ and growing.",
-      description:
-        "Passkeys, magic links, API keys, JWTs, and more.",
-      icons: <>...</>,
-    },
-  ];
   return (
     <div className="relative z-0 w-full lg:w-[60%] overflow-x-hidden">
       <div className="flex items-start lg:items-center justify-center">
@@ -1039,6 +994,17 @@ export default function ReadmeTab() {
                     <span class="hidden md:block absolute top-2/3 left-1/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
                     <span class="hidden md:block absolute top-2/3 left-2/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
                   </div>
+                </div>
+
+                {/* Frameworks */}
+                <div class="my-4">
+                  <div class="flex items-center gap-4">
+                    <span class="text-lg font-medium text-black/95 dark:text-foreground/80 tracking-tight shrink-0">Framework</span>
+                    <div class="flex-1 border-t border-black/15">
+                    </div>
+                  </div>
+                  <p class="text-[15px] sm:text-base text-black/45 mt-1">The most comprehensive authentication framework for TypeScript.
+                  </p>
                 </div>
 
               </article>
