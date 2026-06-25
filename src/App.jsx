@@ -7,7 +7,7 @@ function App() {
     <div className="min-h-screen bg-white">
       <Navbar />
 
-      <div className="flex pt-[44px]">
+      <div className="flex pt-[44px] hero-layout">
         <HeroLeft />
         <ReadmeSection />
       </div>

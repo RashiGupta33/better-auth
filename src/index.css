@@ -91,3 +91,71 @@ pre {
     transform: translateX(0);
   }
 }
+
+/* ─── Mobile & Tablet Responsive ─────────────────────────────────────── */
+
+/* HeroLeft: comfortable height on mobile so content isn't too cramped */
+@media (max-width: 1023px) {
+  /* Stack the main layout vertically on mobile/tablet */
+  .hero-layout {
+    flex-direction: column;
+  }
+
+  /* HeroLeft takes full width and has a min-height instead of full viewport */
+  .hero-left-panel {
+    width: 100%;
+    min-height: 260px;
+    height: auto;
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 1.5rem 1.25rem 2rem;
+  }
+
+  /* Content inside HeroLeft: no negative margin on small screens */
+  .hero-left-content {
+    margin-top: 0 !important;
+  }
+
+  /* ReadmeSection takes full width */
+  .readme-panel {
+    width: 100%;
+  }
+}
+
+/* Tablet (641px – 1023px) tweaks */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .hero-left-panel {
+    min-height: 300px;
+    padding: 2rem 1.5rem 2.5rem;
+  }
+}
+
+/* Mobile-specific: tighten up code blocks & article padding */
+@media (max-width: 640px) {
+  pre,
+  code {
+    font-size: 0.78rem;
+  }
+
+  /* Prevent overflow on very small viewports */
+  article {
+    overflow-x: hidden;
+  }
+
+  /* Reduce marquee track padding on mobile */
+  .animate-logo-marquee,
+  .animate-marquee-reverse {
+    gap: 1rem;
+  }
+}
+
+/* Hamburger dropdown: close when focus leaves */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Ensure mobile nav dropdown is above everything */
+details[open] > div {
+  z-index: 100;
+}

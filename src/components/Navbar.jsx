@@ -46,7 +46,62 @@ export default function Navbar() {
           <span>↗</span>
         </a>
       </div>
+
+      {/* Mobile / Tablet Navbar */}
+      <div className="lg:hidden flex w-full h-[44px] items-center justify-between border-b border-black/[0.06] px-4">
+        {/* Mobile Logo */}
+        <a href="/" className="flex items-center gap-2">
+          <img src={logo} alt="BETTER-AUTH." className="h-[18px] w-auto" />
+          <span className="font-medium text-sm text-neutral-800">BETTER-AUTH.</span>
+        </a>
+
+        {/* Mobile actions */}
+        <div className="flex items-center gap-2">
+          <a
+            href="#"
+            className="flex items-center px-3 py-1.5 bg-black text-white font-mono text-[11px] tracking-wider uppercase"
+          >
+            SIGN-IN
+          </a>
+          {/* Hamburger */}
+          <MobileMenu />
+        </div>
+      </div>
     </div>
+  );
+}
+
+function MobileMenu() {
+  return (
+    <details className="relative group">
+      <summary className="list-none cursor-pointer flex items-center justify-center w-8 h-8 text-black/60 hover:text-black transition-colors">
+        {/* Hamburger icon */}
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
+          <line x1="0" y1="1" x2="18" y2="1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+          <line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+          <line x1="0" y1="13" x2="18" y2="13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        </svg>
+      </summary>
+      {/* Dropdown menu */}
+      <div className="absolute right-0 top-full mt-1 w-44 bg-white border border-black/[0.08] shadow-md z-50">
+        {[
+          { label: "README", active: true },
+          { label: "DOCS" },
+          { label: "PRODUCTS" },
+          { label: "ENTERPRISE" },
+          { label: "RESOURCES" },
+        ].map(({ label, active }) => (
+          <a
+            key={label}
+            href="#"
+            className={`block px-4 py-2.5 font-mono text-[11px] tracking-wider uppercase border-b border-black/[0.06] transition-colors
+              ${active ? "text-black font-semibold" : "text-black/60 hover:text-black hover:bg-neutral-50"}`}
+          >
+            {label}
+          </a>
+        ))}
+      </div>
+    </details>
   );
 }
 

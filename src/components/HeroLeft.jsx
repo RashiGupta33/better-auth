@@ -2,6 +2,7 @@ export default function HeroLeft() {
   return (
     <div
       className="
+        hero-left-panel
         relative
         w-full
         lg:w-[40%]
@@ -85,6 +86,7 @@ export default function HeroLeft() {
       {/* Content */}
       <div
         className="
+          hero-left-content
           relative
           z-[2]
           h-full
@@ -159,7 +161,7 @@ export default function HeroLeft() {
             </svg>
           </a>
 
-          <h1 className="pt-3 sm:pt-4 text-2xl md:text-3xl xl:text-4xl text-neutral-800 dark:text-neutral-200 tracking-tight leading-tight text-balance">
+          <h1 className="pt-3 sm:pt-4 text-30px md:text-3xl xl:text-4xl text-neutral-800 dark:text-neutral-200 tracking-tight leading-tight text-balance">
             The most comprehensive authentication framework
           </h1>
 

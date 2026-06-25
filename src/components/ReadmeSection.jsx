@@ -3,7 +3,7 @@ import Infrastructure from "./Infrastructure";
 
 export default function ReadmeTab() {
   return (
-    <div className="relative z-0 w-full lg:w-[60%] overflow-x-hidden">
+    <div className="readme-panel relative z-0 w-full lg:w-[60%] overflow-x-hidden">
       <div className="flex items-start lg:items-center justify-center">
         <div className="flex flex-col w-full">
           <div className="flex-1 overflow-x-hidden no-scrollbar">
@@ -59,7 +59,7 @@ export default function ReadmeTab() {
                         <div>
                           <div className="flex items-center justify-between bg-neutral-100/50 dark:bg-[#050505] px-4 py-3">
                             <code
-                              className="text-[13px]"
+                              className="!text-[13px]"
                               style={{
                                 fontFamily: "var(--font-geist-pixel-square)",
                               }}
