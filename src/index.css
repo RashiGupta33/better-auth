@@ -45,3 +45,49 @@ a {
 .animate-logo-marquee {
   animation: logo-marquee 28s linear infinite;
 }
+
+code,
+pre {
+  font-family: var(--default-mono-font-family);
+  font-feature-settings: var(--default-mono-font-feature-settings, normal);
+  font-variation-settings: var(--default-mono-font-variation-settings, normal);
+  font-size: 1em;
+}
+
+.line {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  min-height: 18px;
+  line-height: 18px;
+}
+
+.line::before {
+  content: counter(line);
+  counter-increment: line;
+  position: absolute;
+  left: 0;
+  width: 24px;
+  text-align: right;
+  color: #9ca3af;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

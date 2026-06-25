@@ -1,3 +1,6 @@
+import Framework from "./Frameworks";
+import Infrastructure from "./Infrastructure";
+
 export default function ReadmeTab() {
   return (
     <div className="relative z-0 w-full lg:w-[60%] overflow-x-hidden">
@@ -576,7 +579,7 @@ export default function ReadmeTab() {
                           </div>
 
                           <div className="relative flex items-center justify-center size-6 border border-foreground/[0.08] bg-background text-[#10B981] shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
                           </div>
 
                           <div className="relative flex items-center justify-center size-6 border border-foreground/[0.08] bg-background text-neutral-800 dark:text-neutral-200 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
@@ -989,23 +992,15 @@ export default function ReadmeTab() {
                       </div>
                     </a>
 
-                    <span class="hidden md:block absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
-                    <span class="hidden md:block absolute top-1/3 left-2/3 -translate-x-1/2 -translate-y-1/2 font-mono -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
-                    <span class="hidden md:block absolute top-2/3 left-1/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
-                    <span class="hidden md:block absolute top-2/3 left-2/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
+                    <span className="hidden md:block absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
+                    <span className="hidden md:block absolute top-1/3 left-2/3 -translate-x-1/2 -translate-y-1/2 font-mono -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
+                    <span className="hidden md:block absolute top-2/3 left-1/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
+                    <span className="hidden md:block absolute top-2/3 left-2/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
                   </div>
                 </div>
 
-                {/* Frameworks */}
-                <div class="my-4">
-                  <div class="flex items-center gap-4">
-                    <span class="text-lg font-medium text-black/95 dark:text-foreground/80 tracking-tight shrink-0">Framework</span>
-                    <div class="flex-1 border-t border-black/15">
-                    </div>
-                  </div>
-                  <p class="text-[15px] sm:text-base text-black/45 mt-1">The most comprehensive authentication framework for TypeScript.
-                  </p>
-                </div>
+                <Framework />
+                <Infrastructure />
 
               </article>
             </div>
