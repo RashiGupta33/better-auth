@@ -57,14 +57,14 @@ export default function Infrastructure() {
                         transform: "translateX(-50%)",
                         width: "100vw",
                         maskImage:
-                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                            "linear-gradient(transparent 0%, black 80%, black 92%, transparent 100%)",
                         WebkitMaskImage:
-                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                            "linear-gradient(transparent 0%, black 80%, black 92%, transparent 100%)",
                     }}
                 >
-                    <div className="absolute inset-0 bg-neutral-200/20 dark:bg-black/30"></div>
+                    <div className="absolute inset-0 bg-neutral-800/30"></div>
 
-                    <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07]">
+                    <div className="absolute inset-0 opacity-[0.07]">
                         <svg className="w-full h-full">
                             <filter id="infra-grain">
                                 <feTurbulence
@@ -83,21 +83,21 @@ export default function Infrastructure() {
 
                 <div className="relative z-10 mb-6">
                     <div className="flex items-center gap-4 mb-2">
-                        <span className="text-lg font-medium text-foreground/85 dark:text-foreground/80 tracking-tight shrink-0">
+                        <span className="text-lg font-medium text-neutral-200 tracking-tight shrink-0">
                             Infrastructure
                         </span>
 
-                        <div className="flex-1 border-t border-black/15"></div>
+                        <div className="flex-1 border-t border-white/15"></div>
                     </div>
 
-                    <p className="text-[14px] sm:text-base text-black/70 dark:text-foreground/50 leading-relaxed">
+                    <p className="text-[14px] sm:text-base text-neutral-400 leading-relaxed">
                         Connect to our infrastructure and power your self-hosted Better Auth with
                         a dashboard, audit logs, security detection, enterprise features, and more.
                     </p>
                 </div>
 
                 <div
-                    className="relative z-10 overflow-hidden border border-black/10"
+                    className="relative z-10 overflow-hidden border border-white/10"
                     style={{
                         maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
                         WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
@@ -116,19 +116,19 @@ export default function Infrastructure() {
             <div className="relative z-10 grid grid-cols-1 sm:grid-cols-3 -mt-4 -mx-px">
                 <div
                     className="absolute top-0 bottom-0 z-0 pointer-events-none"
-                    style={{
-                        left: "50%",
-                        transform: "translateX(-50%)",
-                        width: "100vw",
-                        maskImage:
-                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
-                        WebkitMaskImage:
-                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
-                    }}
+                    // style={{
+                    //     left: "50%",
+                    //     transform: "translateX(-50%)",
+                    //     width: "100vw",
+                    //     maskImage:
+                    //         "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                    //     WebkitMaskImage:
+                    //         "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                    // }}
                 >
-                    <div className="absolute inset-0 bg-neutral-200/20 dark:bg-black/30"></div>
+                    <div className="absolute inset-0 bg-neutral-800/30"></div>
 
-                    <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07]">
+                    <div className="absolute inset-0 opacity-[0.07]">
                         <svg className="w-full h-full">
                             <filter id="infra-grain">
                                 <feTurbulence
@@ -147,9 +147,9 @@ export default function Infrastructure() {
                 {sections.map((section) => (
                     <div
                         key={section.title}
-                        className="relative overflow-hidden border-t border-r border-b border-dashed border-black/20 first:border-l first:-mt-px p-4"
+                        className="relative overflow-hidden border-t border-r border-b border-dashed border-white/20 first:border-l first:-mt-px p-4"
                     >
-                        <h4 className="relative text-[12px] sm:text-xs font-mono font-semibold uppercase tracking-widest text-black/80 dark:text-foreground/75 mb-3">
+                        <h4 className="relative text-[12px] sm:text-xs font-mono font-semibold uppercase tracking-widest text-neutral-200 mb-3">
                             {section.title}
                         </h4>
 
@@ -157,9 +157,9 @@ export default function Infrastructure() {
                             {section.items.map((item) => (
                                 <li
                                     key={item}
-                                    className="flex items-start gap-2 text-[13px] sm:text-[14px] text-black/70 dark:text-black/60"
+                                    className="flex items-start gap-2 text-[13px] sm:text-[14px] text-neutral-400"
                                 >
-                                    <span className="text-black/30">+</span>
+                                    <span className="text-white/30">+</span>
                                     <span>{item}</span>
                                 </li>
                             ))}
@@ -168,22 +168,22 @@ export default function Infrastructure() {
                 ))}
             </div>
 
-            <div className="relative z-10 border border-dashed border-black/20 -mt-px -mx-px p-4">
+            <div className="relative z-10 border border-dashed border-white/20 -mt-px -mx-px p-4">
                 <div
                     className="absolute top-0 bottom-0 z-0 pointer-events-none"
-                    style={{
-                        left: "50%",
-                        transform: "translateX(-50%)",
-                        width: "100vw",
-                        maskImage:
-                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
-                        WebkitMaskImage:
-                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
-                    }}
+                    // style={{
+                    //     left: "50%",
+                    //     transform: "translateX(-50%)",
+                    //     width: "100vw",
+                    //     maskImage:
+                    //         "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                    //     WebkitMaskImage:
+                    //         "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                    // }}
                 >
-                    <div className="absolute inset-0 bg-neutral-200/20 dark:bg-black/30"></div>
+                    <div className="absolute inset-0 bg-neutral-800/30"></div>
 
-                    <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07]">
+                    <div className="absolute inset-0 opacity-[0.07]">
                         <svg className="w-full h-full">
                             <filter id="infra-grain">
                                 <feTurbulence
@@ -206,15 +206,15 @@ export default function Infrastructure() {
                             <Shield
                                 size={12}
                                 strokeWidth={1.5}
-                                className="text-black/30"
+                                className="text-white/30"
                             />
 
-                            <h4 className="text-[11px] sm:text-xs font-mono font-semibold uppercase tracking-widest text-black/80 dark:text-foreground/75">
+                            <h4 className="text-[11px] sm:text-xs font-mono font-semibold uppercase tracking-widest text-neutral-200">
                                 Sentinel
                             </h4>
                         </div>
 
-                        <p className="text-[13px] sm:text-[14px] text-black/70 dark:text-black/60 leading-relaxed">
+                        <p className="text-[13px] sm:text-[14px] text-neutral-400 leading-relaxed">
                             Real-time threat detection before it reaches your users.
                         </p>
                     </div>
@@ -224,7 +224,7 @@ export default function Infrastructure() {
                         {sentinelFeatures.map((feature) => (
                             <span
                                 key={feature}
-                                className="inline-flex items-center px-2 py-1 text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-black/40 dark:text-foreground/55 border border-foreground/[0.12] bg-foreground/[0.03] hover:bg-foreground/[0.06] hover:text-foreground/80 dark:hover:text-foreground/65 transition-colors"
+                                className="inline-flex items-center px-2 py-1 text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-neutral-400 border border-white/[0.12] bg-white/[0.03] hover:bg-white/[0.06] hover:text-neutral-200 transition-colors"
                             >
                                 {feature}
                             </span>
@@ -233,22 +233,22 @@ export default function Infrastructure() {
                 </div>
             </div>
 
-            <div className="relative z-10 flex items-center justify-between mt-4 px-6 py-5 border border-dashed border-black/20 bg-foreground/[0.01]">
+            <div className="relative z-10 flex items-center justify-between mt-4 px-6 py-5 border border-dashed border-white/20 bg-neutral-900/[0.01]">
                 <div
                     className="absolute top-0 bottom-0 z-0 pointer-events-none"
-                    style={{
-                        left: "50%",
-                        transform: "translateX(-50%)",
-                        width: "100vw",
-                        maskImage:
-                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
-                        WebkitMaskImage:
-                            "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
-                    }}
+                    // style={{
+                    //     left: "50%",
+                    //     transform: "translateX(-50%)",
+                    //     width: "100vw",
+                    //     maskImage:
+                    //         "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                    //     WebkitMaskImage:
+                    //         "linear-gradient(transparent 0%, black 8%, black 92%, transparent 100%)",
+                    // }}
                 >
-                    <div className="absolute inset-0 bg-neutral-200/20 dark:bg-black/30"></div>
+                    <div className="absolute inset-0 bg-neutral-800/30"></div>
 
-                    <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07]">
+                    <div className="absolute inset-0 opacity-[0.07]">
                         <svg className="w-full h-full">
                             <filter id="infra-grain">
                                 <feTurbulence
@@ -265,11 +265,11 @@ export default function Infrastructure() {
                     </div>
                 </div>
                 <div className="flex flex-col gap-0.5">
-                    <span className="text-[13px] sm:text-[14px] font-medium text-foreground/90 dark:text-foreground/85">
+                    <span className="text-[13px] sm:text-[14px] font-medium text-neutral-200">
                         Explore plans
                     </span>
 
-                    <span className="text-[11px] sm:text-[12px] text-black/75 dark:text-foreground/60">
+                    <span className="text-[11px] sm:text-[12px] text-neutral-400">
                         Dashboard, audit logs, security detection, transactional comms, and
                         more.
                     </span>
@@ -277,7 +277,7 @@ export default function Infrastructure() {
 
                 <a
                     href="#"
-                    className="inline-flex items-center gap-1.5 shrink-0 ml-4 px-4 py-2.5 bg-black/90 !text-white/100 hover:opacity-80 hover:cursor-pointer transition-all font-mono text-[11px] uppercase tracking-widest group"
+                    className="inline-flex items-center gap-1.5 shrink-0 ml-4 px-4 py-2.5 bg-white/90 !text-black hover:opacity-80 hover:cursor-pointer transition-all font-mono text-[11px] uppercase tracking-widest group"
                 >
                     View Plans
                     <ArrowRight
@@ -290,7 +290,7 @@ export default function Infrastructure() {
             <div className="relative mt-10 pt-8 pb-16 overflow-hidden">
                 {/* Background Logo */}
                 <div
-                    className="absolute -right-10 top-1/2 -translate-y-1/2 pointer-events-none select-none opacity-[0.03] dark:opacity-[0.04]"
+                    className="absolute -right-10 top-1/2 -translate-y-1/2 pointer-events-none select-none opacity-[0.04]"
                     aria-hidden="true"
                 >
                     <svg
@@ -323,15 +323,15 @@ export default function Infrastructure() {
 
                 <div className="pt-8">
                     <div className="flex items-center gap-4 mb-2">
-                        <span className="text-lg font-medium text-foreground/90 dark:text-foreground/80 tracking-tight shrink-0">
+                        <span className="text-lg font-medium text-neutral-200 tracking-tight shrink-0">
                             Contributors
                         </span>
-                        <div className="flex-1 border-t border-black/10">
+                        <div className="flex-1 border-t border-white/10">
                         </div>
                     </div>
-                    <p className="text-[13px] text-black/50 dark:text-black/40 mb-5 leading-relaxed">
+                    <p className="text-[13px] text-neutral-400 mb-5 leading-relaxed">
                         Built by a community of
-                        <span className="text-black/80 dark:text-foreground/60 font-medium tabular-nums">
+                        <span className="text-neutral-200 font-medium tabular-nums">
                             {" "} 874+</span> contributors.
                     </p>
                     <img
@@ -343,7 +343,7 @@ export default function Infrastructure() {
                 </div>
 
                 <div className="relative space-y-6">
-                    <p className="text-center text-lg text-balance text-black/60 dark:text-foreground/50 tracking-tight">
+                    <p className="text-center text-lg text-balance text-neutral-400 tracking-tight">
                         Roll your own auth with confidence in minutes.
                     </p>
 
@@ -358,7 +358,7 @@ export default function Infrastructure() {
 
                                 {/* NPM SVG */}
                                 <svg
-                                    className="size-[11px] -translate-y-px text-black/50"
+                                    className="size-[11px] -translate-y-px text-neutral-400"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="1.2em"
                                     height="1.2em"
@@ -369,12 +369,12 @@ export default function Infrastructure() {
                                         d="M0 7.062C0 3.225 3.225 0 7.062 0h113.88c3.838 0 7.063 3.225 7.063 7.062v113.88c0 3.838-3.225 7.063-7.063 7.063H7.062c-3.837 0-7.062-3.225-7.062-7.063zm23.69 97.518h40.395l.05-58.532h19.494l-.05 58.581h19.543l.05-78.075l-78.075-.1l-.1 78.126z"
                                     />
                                     <path
-                                        className="fill-background text-black/50"
+                                        className="fill-background text-neutral-400"
                                         d="M25.105 65.52V26.512H40.96c8.72 0 26.274.034 39.008.075l23.153.075v77.866H83.645v-58.54H64.057v58.54H25.105z"
                                     />
                                 </svg>
 
-                                <span className="text-xs font-mono text-black/50">
+                                <span className="text-xs font-mono text-neutral-400">
                                     4.6M / week
                                 </span>
                             </div>
@@ -397,12 +397,12 @@ export default function Infrastructure() {
                                     strokeWidth="2"
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
-                                    className="size-[11px] -translate-y-px text-black/50"
+                                    className="size-[11px] -translate-y-px text-neutral-400"
                                 >
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                                 </svg>
 
-                                <span className="text-xs font-mono text-black/50 dark:text-black/60">
+                                <span className="text-xs font-mono text-neutral-400">
                                     29k stars
                                 </span>
 
@@ -415,7 +415,7 @@ export default function Infrastructure() {
                         {/* Get Started Button */}
                         <a
                             href="/docs/installation"
-                            className="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 bg-neutral-900 !text-neutral-100 dark:bg-neutral-100 dark:text-neutral-900 text-xs sm:text-sm font-medium hover:opacity-90 transition-colors"
+                            className="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 bg-white !text-black text-xs sm:text-sm font-medium hover:opacity-90 transition-colors"
                         >
                             Get Started
                         </a>
@@ -431,8 +431,7 @@ export default function Infrastructure() {
       px-4
       sm:px-5
       py-2
-      text-neutral-600
-      dark:text-neutral-300
+      text-neutral-300
       text-xs
       sm:text-sm
       font-medium
@@ -454,13 +453,13 @@ export default function Infrastructure() {
                                 }}
                             />
 
-                            <span className="absolute top-0 -left-[6px] -right-[6px] h-px bg-black/20 group-hover:bg-black/30 transition-colors" />
+                            <span className="absolute top-0 -left-[6px] -right-[6px] h-px bg-white/20 group-hover:bg-white/30 transition-colors" />
 
-                            <span className="absolute bottom-0 -left-[6px] -right-[6px] h-px bg-black/20 group-hover:bg-black/30 transition-colors" />
+                            <span className="absolute bottom-0 -left-[6px] -right-[6px] h-px bg-white/20 group-hover:bg-white/30 transition-colors" />
 
-                            <span className="absolute left-0 -top-[6px] -bottom-[6px] w-px bg-black/20 group-hover:bg-black/30 transition-colors" />
+                            <span className="absolute left-0 -top-[6px] -bottom-[6px] w-px bg-white/20 group-hover:bg-white/30 transition-colors" />
 
-                            <span className="absolute right-0 -top-[6px] -bottom-[6px] w-px bg-black/20 group-hover:bg-black/30 transition-colors" />
+                            <span className="absolute right-0 -top-[6px] -bottom-[6px] w-px bg-white/20 group-hover:bg-white/30 transition-colors" />
 
                             <span
                                 className="
@@ -469,7 +468,7 @@ export default function Infrastructure() {
         -right-[6px]
         font-mono
         text-[8px]
-        text-black/40
+        text-white/40
         leading-none
         select-none
         translate-x-1/2

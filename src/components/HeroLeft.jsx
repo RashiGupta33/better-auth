@@ -10,13 +10,13 @@ export default function HeroLeft() {
         border-b
         lg:border-b-0
         lg:border-r
-        border-black/[0.06]
+        border-white/[0.06]
         px-5
         sm:px-6
         lg:px-7
         lg:sticky
         lg:top-[44px]
-        bg-white
+        bg-neutral-950
         overflow-hidden
       "
     >
@@ -111,10 +111,8 @@ export default function HeroLeft() {
     pointer-events-auto
     group
     rounded-full
-    bg-neutral-200/80
-    dark:bg-neutral-800/80
-    hover:bg-neutral-200/70
-    dark:hover:bg-neutral-700/50
+    bg-neutral-800/80
+    hover:bg-neutral-700/50
     transition-colors
   "
           >
@@ -123,7 +121,7 @@ export default function HeroLeft() {
               width="0.9em"
               height="0.9em"
               viewBox="0 0 24 24"
-              className="text-neutral-600 dark:text-neutral-100"
+              className="text-neutral-100"
               aria-hidden="true"
             >
               <path
@@ -132,7 +130,7 @@ export default function HeroLeft() {
               />
             </svg>
 
-            <span className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-100 font-light">
+            <span className="text-xs sm:text-sm text-neutral-100 font-light">
               Introducing{" "}
               <span className="font-normal">| Agent Auth Protocol</span>
             </span>
@@ -143,8 +141,7 @@ export default function HeroLeft() {
               height="0.85em"
               viewBox="0 0 24 24"
               className="
-      text-neutral-500
-      dark:text-neutral-400
+      text-neutral-400
       transition-transform
       group-hover:translate-x-0.5
     "
@@ -161,7 +158,7 @@ export default function HeroLeft() {
             </svg>
           </a>
 
-          <h1 className="pt-3 sm:pt-4 text-30px md:text-3xl xl:text-4xl text-neutral-800 dark:text-neutral-200 tracking-tight leading-tight text-balance">
+          <h1 className="pt-3 sm:pt-4 text-30px md:text-3xl xl:text-4xl text-neutral-200 tracking-tight leading-tight text-balance">
             The most comprehensive authentication framework
           </h1>
 
@@ -182,8 +179,7 @@ export default function HeroLeft() {
       px-4
       sm:px-5
       py-2
-      text-neutral-600
-      dark:text-neutral-300
+      text-neutral-300
       text-xs
       sm:text-sm
       font-medium
@@ -205,13 +201,13 @@ export default function HeroLeft() {
                 }}
               />
 
-              <span className="absolute top-0 -left-[6px] -right-[6px] h-px bg-black/20 group-hover:bg-black/30 transition-colors" />
+              <span className="absolute top-0 -left-[6px] -right-[6px] h-px bg-white/20 group-hover:bg-white/30 transition-colors" />
 
-              <span className="absolute bottom-0 -left-[6px] -right-[6px] h-px bg-black/20 group-hover:bg-black/30 transition-colors" />
+              <span className="absolute bottom-0 -left-[6px] -right-[6px] h-px bg-white/20 group-hover:bg-white/30 transition-colors" />
 
-              <span className="absolute left-0 -top-[6px] -bottom-[6px] w-px bg-black/20 group-hover:bg-black/30 transition-colors" />
+              <span className="absolute left-0 -top-[6px] -bottom-[6px] w-px bg-white/20 group-hover:bg-white/30 transition-colors" />
 
-              <span className="absolute right-0 -top-[6px] -bottom-[6px] w-px bg-black/20 group-hover:bg-black/30 transition-colors" />
+              <span className="absolute right-0 -top-[6px] -bottom-[6px] w-px bg-white/20 group-hover:bg-white/30 transition-colors" />
 
               <span
                 className="
@@ -220,7 +216,7 @@ export default function HeroLeft() {
         -right-[6px]
         font-mono
         text-[8px]
-        text-black/40
+        text-white/40
         leading-none
         select-none
         translate-x-1/2
@@ -249,7 +245,7 @@ export default function HeroLeft() {
           items-center
           text-[11px]
           font-mono
-          text-black/40
+          text-white/40
           z-[3]
         "
       >
@@ -266,7 +262,7 @@ export default function HeroLeft() {
         <div className="flex items-center gap-3">
           <a href="#">𝕏</a>
           <a href="#">GitHub</a>
-          <span className="h-3 w-px bg-black/10" />
+          <span className="h-3 w-px bg-white/10" />
           <button>☀️</button>
         </div>
       </div>

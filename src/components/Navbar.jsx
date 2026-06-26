@@ -2,9 +2,9 @@ import logo from "../assets/vite.svg";
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-[99] flex items-start bg-white">
+    <div className="fixed top-0 left-0 right-0 z-[99] flex items-start bg-neutral-950">
       {/* Left Logo Panel */}
-      <div className="w-[40%] h-[44px] hidden lg:flex items-stretch shrink-0 border-r border-black/[0.06] px-7">
+      <div className="w-[40%] h-[44px] hidden lg:flex items-stretch shrink-0 border-r border-white/[0.06] px-7">
         <a
           href="/"
           className="flex h-full items-center justify-center px-2"
@@ -15,11 +15,11 @@ export default function Navbar() {
             className="h-[20px] w-auto"
           />
         </a>
-        <p className="pt-3 sm:pt-3 text-neutral-800 dark:text-neutral-200 font-medium">BETTER-AUTH.</p>
+        <p className="pt-3 sm:pt-3 text-neutral-200 font-medium">BETTER-AUTH.</p>
       </div>
 
       {/* Right Navigation */}
-      <div className="flex-1 hidden lg:flex h-[44px] border-b border-black/[0.06] bg-white min-w-0">
+      <div className="flex-1 hidden lg:flex h-[44px] border-b border-white/[0.06] bg-neutral-950 min-w-0">
         <NavItem active>README</NavItem>
         <NavItem>DOCS</NavItem>
         <NavDropdown>PRODUCTS</NavDropdown>
@@ -48,11 +48,11 @@ export default function Navbar() {
       </div>
 
       {/* Mobile / Tablet Navbar */}
-      <div className="lg:hidden flex w-full h-[44px] items-center justify-between border-b border-black/[0.06] px-4">
+      <div className="lg:hidden flex w-full h-[44px] items-center justify-between border-b border-white/[0.06] px-4">
         {/* Mobile Logo */}
         <a href="/" className="flex items-center gap-2">
           <img src={logo} alt="BETTER-AUTH." className="h-[18px] w-auto" />
-          <span className="font-medium text-sm text-neutral-800">BETTER-AUTH.</span>
+          <span className="font-medium text-sm text-neutral-200">BETTER-AUTH.</span>
         </a>
 
         {/* Mobile actions */}
@@ -74,7 +74,7 @@ export default function Navbar() {
 function MobileMenu() {
   return (
     <details className="relative group">
-      <summary className="list-none cursor-pointer flex items-center justify-center w-8 h-8 text-black/60 hover:text-black transition-colors">
+      <summary className="list-none cursor-pointer flex items-center justify-center w-8 h-8 text-white/60 hover:text-white transition-colors">
         {/* Hamburger icon */}
         <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
           <line x1="0" y1="1" x2="18" y2="1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
@@ -83,7 +83,7 @@ function MobileMenu() {
         </svg>
       </summary>
       {/* Dropdown menu */}
-      <div className="absolute right-0 top-full mt-1 w-44 bg-white border border-black/[0.08] shadow-md z-50">
+      <div className="absolute right-0 top-full mt-1 w-44 bg-neutral-900 border border-white/[0.08] shadow-md z-50">
         {[
           { label: "README", active: true },
           { label: "DOCS" },
@@ -94,8 +94,8 @@ function MobileMenu() {
           <a
             key={label}
             href="#"
-            className={`block px-4 py-2.5 font-mono text-[11px] tracking-wider uppercase border-b border-black/[0.06] transition-colors
-              ${active ? "text-black font-semibold" : "text-black/60 hover:text-black hover:bg-neutral-50"}`}
+            className={`block px-4 py-2.5 font-mono text-[11px] tracking-wider uppercase border-b border-white/[0.06] transition-colors
+              ${active ? "text-white font-semibold" : "text-white/60 hover:text-white hover:bg-neutral-800"}`}
           >
             {label}
           </a>
@@ -116,15 +116,15 @@ function NavItem({ children, active = false }) {
           justify-center
           h-[44px]
           border-r
-          border-black/[0.06]
+          border-white/[0.06]
           font-mono
           text-xs
           uppercase
           tracking-wider
           transition-colors
           ${active
-            ? "border-b-2 border-b-black text-black"
-            : "text-black/60 hover:text-black"
+            ? "border-b-2 border-b-white text-white"
+            : "text-white/60 hover:text-white"
           }
         `}
       >
@@ -146,13 +146,13 @@ function NavDropdown({ children }) {
           justify-center
           gap-2
           border-r
-          border-black/[0.06]
+          border-white/[0.06]
           font-mono
           text-xs
           uppercase
           tracking-wider
-          text-black/60
-          hover:text-black
+          text-white/60
+          hover:text-white
         "
       >
         {children}
