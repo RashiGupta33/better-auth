@@ -3,7 +3,7 @@ import Infrastructure from "./Infrastructure";
 
 export default function ReadmeTab() {
   return (
-    <div className="readme-panel relative z-0 w-full lg:w-[60%] overflow-x-hidden bg-neutral-950">
+    <div className="readme-panel relative z-0 w-full lg:w-[60%] overflow-x-hidden bg-black">
       <div className="flex items-start lg:items-center justify-center">
         <div className="flex flex-col w-full">
           <div className="flex-1 overflow-x-hidden no-scrollbar">
@@ -57,7 +57,7 @@ export default function ReadmeTab() {
                     <div style={{ overflow: "visible", height: "50px" }}>
                       <div>
                         <div>
-                          <div className="flex items-center justify-between bg-neutral-900 px-4 py-3">
+                          <div className="flex items-center justify-between bg-black px-4 py-3">
                             <code
                               className="!text-[13px]"
                               style={{
@@ -112,10 +112,10 @@ export default function ReadmeTab() {
                     <div className="relative overflow-hidden">
 
                       {/* Left fade */}
-                      <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-neutral-950 to-transparent z-10 pointer-events-none" />
+                      <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
 
                       {/* Right fade */}
-                      <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-neutral-950 to-transparent z-10 pointer-events-none" />
+                      <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
 
                       {/* Fade effect on left/right */}
                       <div
@@ -372,7 +372,7 @@ export default function ReadmeTab() {
                               />
                             </svg>
 
-                            <span className="text-[9px] font-mono text-black/50 dark:text-foreground/35 truncate">
+                            <span className="text-[9px] font-mono text-white/50 dark:text-white/35 truncate">
                               user@email.com
                             </span>
                           </div>
@@ -403,7 +403,7 @@ export default function ReadmeTab() {
                     <a className="contents" href="/docs">
                       <div className="group/card relative p-4 lg:p-5 border-white/[0.08] min-h-[100px] transition-all duration-200 hover:bg-white/[0.02] hover:shadow-[inset_0_1px_0_0_rgba(128,128,128,0.1)] hover:z-10 border-b sm:border-r md:border-r-0" style={{ transform: "none" }} >
                         <span className="absolute top-3 right-3 lg:top-4 lg:right-4 opacity-0 -translate-y-0.5 group-hover/card:opacity-100 group-hover/card:translate-y-0 transition-all duration-200">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-black/45 dark:text-foreground/50"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/50 dark:text-foreground/50"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                         </span>
                         <div className="mb-1">
                           <div className="text-[11px] font-mono text-white/50 tracking-wider transition-colors duration-200 group-hover/card:text-white/60">03</div>
@@ -415,29 +415,29 @@ export default function ReadmeTab() {
                             <div className="relative flex items-center gap-2.5">
                               <div className="absolute left-3 right-3 top-1/2 h-px -translate-y-1/2 bg-white/[0.08]">
                               </div>
-                              <div className="relative flex items-center h-6 border border-white/[0.08] bg-neutral-900 shrink-0 overflow-hidden opacity-60 transition-opacity duration-300 group-hover/card:opacity-100" style={{ width: "24px" }}>
+                              <div className="relative flex items-center h-6 border border-white/[0.08] bg-black shrink-0 overflow-hidden opacity-60 transition-opacity duration-300 group-hover/card:opacity-100" style={{ width: "24px" }}>
                                 <div className="flex items-center gap-1.5 px-[7px]">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 48 48" className="shrink-0"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917"></path><path fill="#FF3D00" d="m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691"></path><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.9 11.9 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44"></path><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917"></path></svg>
                                   <span className="text-[8px] font-mono text-white/60 whitespace-nowrap" style={{ opacity: 0 }}>Sign in with Google</span>
                                 </div>
                               </div>
-                              <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-neutral-900 text-neutral-200 shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
+                              <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-black text-neutral-200 shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
                               </div>
-                              <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-neutral-900 text-neutral-200 shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path></svg>
+                              <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-black text-neutral-200 shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path></svg>
                               </div>
-                              <div className="relative flex items-center justify-center size-6 border border-foreground/[0.08] bg-background text-[#5865F2] shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="currentColor" d="M20.317 4.37a19.8 19.8 0 0 0-4.885-1.515.07.07 0 0 0-.073.036c-.21.375-.444.864-.608 1.25a18.3 18.3 0 0 0-5.487 0 13 13 0 0 0-.617-1.25.07.07 0 0 0-.073-.036A19.7 19.7 0 0 0 3.69 4.37a.06.06 0 0 0-.032.025C.533 9.046-.32 13.58.099 18.057a.08.08 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.08.08 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.08.08 0 0 0-.041-.106 13 13 0 0 1-1.872-.892.08.08 0 0 1-.008-.128q.188-.141.372-.287a.08.08 0 0 1 .078-.01c3.928 1.793 8.18 1.793 12.062 0a.08.08 0 0 1 .079.01q.183.149.372.288a.08.08 0 0 1-.006.127c-.598.35-1.22.645-1.873.892a.08.08 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.08.08 0 0 0 .084.029 19.8 19.8 0 0 0 6.002-3.03.08.08 0 0 0 .032-.056c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.026M8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419s.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418m7.975 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418"></path></svg>
+                              <div className="relative flex items-center justify-center size-6 border border-foreground/[0.08] bg-black text-[#5865F2] shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="currentColor" d="M20.317 4.37a19.8 19.8 0 0 0-4.885-1.515.07.07 0 0 0-.073.036c-.21.375-.444.864-.608 1.25a18.3 18.3 0 0 0-5.487 0 13 13 0 0 0-.617-1.25.07.07 0 0 0-.073-.036A19.7 19.7 0 0 0 3.69 4.37a.06.06 0 0 0-.032.025C.533 9.046-.32 13.58.099 18.057a.08.08 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.08.08 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.08.08 0 0 0-.041-.106 13 13 0 0 1-1.872-.892.08.08 0 0 1-.008-.128q.188-.141.372-.287a.08.08 0 0 1 .078-.01c3.928 1.793 8.18 1.793 12.062 0a.08.08 0 0 1 .079.01q.183.149.372.288a.08.08 0 0 1-.006.127c-.598.35-1.22.645-1.873.892a.08.08 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.08.08 0 0 0 .084.029 19.8 19.8 0 0 0 6.002-3.03.08.08 0 0 0 .032-.056c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.026M8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419s.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418m7.975 0c-1.183 0-2.157-1.085-2.157-2.419s.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418"></path></svg>
                               </div>
-                              <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-neutral-900 shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 256 256"><path fill="#F1511B" d="M121.666 121.666H0V0h121.666z"></path><path fill="#80CC28" d="M256 121.666H134.335V0H256z"></path><path fill="#00ADEF" d="M121.663 256.002H0V134.336h121.663z"></path><path fill="#FBBC09" d="M256 256.002H134.335V134.336H256z"></path></svg>
+                              <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-black shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 256 256"><path fill="#F1511B" d="M121.666 121.666H0V0h121.666z"></path><path fill="#80CC28" d="M256 121.666H134.335V0H256z"></path><path fill="#00ADEF" d="M121.663 256.002H0V134.336h121.663z"></path><path fill="#FBBC09" d="M256 256.002H134.335V134.336H256z"></path></svg>
                               </div>
-                              <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-neutral-900 text-neutral-200 shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                              <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-black text-neutral-200 shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
                               </div>
                             </div>
                             <div className="flex items-center justify-center size-6 border border-dashed border-white/[0.1] text-white/35 shrink-0">
                               <span className="text-[8px] font-mono leading-none">+34</span>
                             </div>
                           </div>
-                          <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-neutral-950 to-transparent pointer-events-none">
+                          <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-black to-transparent pointer-events-none">
 
                           </div>
                         </div>
@@ -496,7 +496,7 @@ export default function ReadmeTab() {
                               </span>
                             </div>
 
-                            <div className="relative size-5 rounded-full border border-black/45 dark:border-foreground/20 bg-foreground/[0.015] flex items-center justify-center z-[1]">
+                            <div className="relative size-5 rounded-full border border-white/45 bg-black/[0.015] flex items-center justify-center z-[1]">
                               <span className="text-[8px] font-mono text-white/50 leading-none">
                                 C
                               </span>
@@ -514,11 +514,11 @@ export default function ReadmeTab() {
                               owner
                             </span>
 
-                            <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20 px-1.5 py-0.5 border border-black/45 dark:border-foreground/20 bg-foreground/[0.015]">
+                            <span className="text-[8px] font-mono text-white/50  px-1.5 py-0.5 border border-white/45 bg-black/[0.015]">
                               admin
                             </span>
 
-                            <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20 px-1.5 py-0.5 border border-black/45 dark:border-foreground/20 bg-foreground/[0.015]">
+                            <span className="text-[8px] font-mono text-white/50  px-1.5 py-0.5 border border-white/45 bg-black/[0.015]">
                               member
                             </span>
                           </div>
@@ -566,27 +566,27 @@ export default function ReadmeTab() {
 
                         <div className="mt-3 flex items-center gap-2.5">
                           <div className="relative flex items-center gap-2.5">
-                            <div className="absolute left-3 right-3 top-1/2 h-px -translate-y-1/2 bg-foreground/[0.08]"></div>
-                            <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-neutral-900 text-neutral-200 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
+                            <div className="absolute left-3 right-3 top-1/2 h-px -translate-y-1/2 bg-black/[0.08]"></div>
+                            <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-black text-neutral-200 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
                               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 256 256">
                                 <path fill="currentColor" d="m140.844 1.778l-5.266 64.853a66 66 0 0 0-7.542-.427c-3.203 0-6.334.214-9.393.712l-2.99-31.432a1.72 1.72 0 0 1 1.709-1.848h5.337l-2.562-31.787C120.066.853 120.848 0 121.774 0h17.434c.996 0 1.779.853 1.636 1.849zm-43.976 3.2c-.285-.925-1.281-1.494-2.206-1.138L78.295 9.813c-.925.356-1.352 1.423-.925 2.276l13.307 29.013l-5.052 1.85c-.926.355-1.352 1.421-.926 2.275l13.592 28.515a61 61 0 0 1 15.868-6.044L96.94 4.978zM56.734 23.04l37.643 53.049c-4.768 3.129-9.108 6.827-12.809 11.093L59.011 64.996a1.72 1.72 0 0 1 .071-2.49l4.127-3.413L40.794 36.41c-.711-.711-.64-1.849.142-2.489l13.307-11.164c.783-.64 1.85-.498 2.42.284zM25.139 53.76c-.783-.569-1.921-.284-2.42.569l-8.68 15.075c-.499.854-.143 1.92.71 2.347L43.64 85.404l-2.704 4.623c-.498.853-.142 1.99.783 2.346l28.749 13.156a60.2 60.2 0 0 1 8.254-14.791zM3.862 94.72c.143-.996 1.139-1.564 2.064-1.351l62.976 16.427a62.3 62.3 0 0 0-2.704 16.782l-31.524-2.56a1.642 1.642 0 0 1-1.494-1.991l.925-5.263l-31.808-2.986c-.996-.071-1.637-.996-1.495-1.991l2.99-17.138zm-2.348 42.524c-.996.072-1.637.996-1.494 1.992l3.06 17.137c.142.996 1.138 1.565 2.063 1.351l30.883-8.035l.925 5.262c.143.996 1.139 1.565 2.064 1.351l30.456-8.39c-1.779-5.263-2.917-10.88-3.202-16.64l-64.826 5.972zM11.62 182.33c-.498-.853-.143-1.92.711-2.347l58.778-27.875c2.206 5.262 5.195 10.169 8.753 14.577L54.1 185.031c-.783.569-1.921.356-2.42-.498l-2.704-4.693l-26.257 18.133c-.783.57-1.922.285-2.42-.569l-8.752-15.075zm71.23-12.231L37.094 216.39c-.712.711-.64 1.849.142 2.489l13.378 11.164c.783.64 1.85.498 2.42-.284l18.501-26.027l4.127 3.485c.783.64 1.922.498 2.49-.356l17.933-26.026c-4.839-2.987-9.322-6.614-13.165-10.738zm-9.037 74.31c-.925-.355-1.352-1.421-.925-2.275L100 182.97c4.98 2.56 10.389 4.48 16.01 5.547l-7.97 30.577c-.213.925-1.28 1.494-2.205 1.138l-5.052-1.849l-8.468 30.791c-.285.925-1.281 1.494-2.206 1.138l-16.367-5.973zm46.68-55.11l-5.265 64.853c-.071.996.711 1.849 1.637 1.849h17.434c.996 0 1.779-.853 1.636-1.849l-2.561-31.787h5.336a1.72 1.72 0 0 0 1.708-1.848l-2.988-31.432c-3.06.498-6.191.712-9.393.712c-2.562 0-5.053-.143-7.543-.498m62.763-175.574c.427-.924 0-1.92-.925-2.275l-16.366-5.973c-.926-.356-1.922.213-2.206 1.137l-8.468 30.791l-5.053-1.848c-.925-.356-1.921.213-2.206 1.137l-7.97 30.578c5.693 1.138 11.03 3.058 16.011 5.547zm35.722 25.814L173.222 85.83a62 62 0 0 0-13.165-10.738l17.933-26.026c.569-.783 1.707-.996 2.49-.356l4.127 3.485l18.502-26.027c.57-.782 1.708-.925 2.42-.285l13.377 11.165c.783.64.783 1.778.143 2.489zm24.764 36.409c.925-.427 1.21-1.494.711-2.347L235.7 58.524c-.498-.853-1.637-1.066-2.42-.568l-26.257 18.133l-2.704-4.622c-.499-.854-1.637-1.138-2.42-.498l-25.76 18.347c3.558 4.408 6.476 9.315 8.753 14.577l58.778-27.875zm9.25 23.609l2.99 17.137c.142.996-.499 1.85-1.495 1.991l-64.826 6.045c-.285-5.831-1.424-11.378-3.203-16.64l30.457-8.391c.925-.285 1.921.355 2.063 1.35l.925 5.263l30.884-8.035c.925-.214 1.92.355 2.063 1.35zm-2.917 62.933c.925.213 1.921-.356 2.064-1.351L255.126 144c.143-.996-.498-1.849-1.494-1.991l-31.808-2.987l.925-5.262c.142-.996-.498-1.849-1.495-1.991l-31.523-2.56a62.3 62.3 0 0 1-2.704 16.782l62.976 16.427zM233.28 201.6c-.498.853-1.636 1.067-2.419.569l-53.583-36.978a60.2 60.2 0 0 0 8.254-14.791l28.749 13.156c.925.426 1.28 1.493.783 2.346l-2.704 4.622l28.89 13.654c.854.426 1.21 1.493.712 2.346zm-71.657-21.831l37.643 53.049c.57.782 1.708.924 2.42.284l13.306-11.164c.783-.64.783-1.778.143-2.49l-22.415-22.684l4.127-3.413c.783-.64.783-1.778.07-2.489l-22.557-22.186c-3.771 4.266-8.04 8.035-12.808 11.093zm-.356 72.249c-.925.355-1.921-.214-2.206-1.138l-17.22-62.72a61 61 0 0 0 15.868-6.044l13.592 28.515c.426.925 0 1.991-.926 2.276l-5.052 1.849l13.307 29.013c.427.924 0 1.92-.925 2.275l-16.367 5.974z"></path>
                               </svg>
                             </div>
 
-                            <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-neutral-900 shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
+                            <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-black shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
                               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="#0078D4" d="M13.05 4.24L6.56 18.05L2 18l5.09-8.76zm.7 1.09L22 19.76H6.74l9.3-1.66l-4.87-5.79z"></path></svg>
                             </div>
                           </div>
 
-                          <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-neutral-900 text-[#10B981] shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
+                          <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-black text-[#10B981] shrink-0 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
                           </div>
 
-                          <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-neutral-900 text-neutral-200 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
+                          <div className="relative flex items-center justify-center size-6 border border-white/[0.08] bg-black text-neutral-200 opacity-60 transition-opacity duration-300 group-hover/card:opacity-100">
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7V3H2v18h20V7zM6 19H4v-2h2zm0-4H4v-2h2zm0-4H4V9h2zm0-4H4V5h2zm4 12H8v-2h2zm0-4H8v-2h2zm0-4H8V9h2zm0-4H8V5h2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8zm-2-8h-2v2h2zm0 4h-2v2h2z"></path></svg>
                           </div>
 
-                          <div className="flex items-center justify-center size-6 border border-dashed border-foreground/[0.1] text-foreground/35 dark:text-foreground/20">
+                          <div className="flex items-center justify-center size-6 border border-dashed border-white/10 text-white/35 ">
                             <span className="text-[8px] font-mono leading-none">+</span>
                           </div>
                         </div>
@@ -633,43 +633,43 @@ export default function ReadmeTab() {
 
                         <div className="mt-3 relative overflow-hidden">
                           <div className="flex items-center gap-1 overflow-hidden ">
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/30 border-black/5 bg-foreground/[0.02]">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/50 border-white/5 bg-black/[0.02]">
                               passkeys
                             </span>
 
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/30 border-black/5 bg-foreground/[0.02]">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/50 border-white/5 bg-black/[0.02]">
                               2fa
                             </span>
 
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/22 border-black/5 bg-foreground/[0.015]">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/22 border-white/5 bg-black/[0.015]">
                               magic-link
                             </span>
 
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/22 border-black/5 bg-foreground/[0.015]">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/22 border-white/5 bg-black/[0.015]">
                               jwt
                             </span>
 
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/30 border-black/5">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/50 border-white/5">
                               api-keys
                             </span>
 
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/30 border-black/5">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/50 border-white/5">
                               anonymous
                             </span>
 
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/30 border-black/5">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/50 border-white/5">
                               oidc
                             </span>
 
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/30 border-black/5">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/50 border-white/5">
                               otp
                             </span>
 
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/30 border-black/5">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/50 border-white/5">
                               bearer
                             </span>
 
-                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-black/45 dark:text-foreground/30 border-black/5">
+                            <span className="text-[8px] font-mono whitespace-nowrap px-1.5 py-0.5 border shrink-0 text-white/50 border-white/5">
                               multi-session
                             </span>
                           </div>
@@ -717,7 +717,7 @@ export default function ReadmeTab() {
                           MCP auth, token exchange, and agent delegation.
                         </div>
 
-                        <div className="mt-3 flex items-center h-5 px-2.5 border border-black/5 dark:border-black/5 bg-foreground/[0.015] font-mono text-[8px] gap-1">
+                        <div className="mt-3 flex items-center h-5 px-2.5 border border-white/5 dark:border-white/5 bg-black/[0.015] font-mono text-[8px] gap-1">
                           <span className="text-white/50">$</span>
 
                           <span className="text-white/50">
@@ -783,13 +783,13 @@ export default function ReadmeTab() {
 
                         <div className="mt-3 relative overflow-hidden">
                           <div className="flex items-center gap-1.5 font-mono text-[8px]">
-                            <div className="flex items-center justify-center size-5 border border-black/5 dark:border-black/5 bg-foreground/[0.02] shrink-0">
+                            <div className="flex items-center justify-center size-5 border border-white/5 dark:border-white/5 bg-black/[0.02] shrink-0">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="10"
                                 height="10"
                                 viewBox="0 0 24 24"
-                                className="text-black/45 dark:text-foreground/30"
+                                className="text-white/50"
                               >
                                 <path
                                   fill="currentColor"
@@ -862,61 +862,61 @@ export default function ReadmeTab() {
                             <div className="flex gap-4 shrink-0">
 
                               <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                                <span className="text-[8px] font-mono text-black/45">
+                                <span className="text-[8px] font-mono text-white/50">
                                   10:50 AM
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                   John
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 ">
                                   created a session
                                 </span>
                               </div>
 
                               <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                                <span className="text-[8px] font-mono text-black/45">
+                                <span className="text-[8px] font-mono text-white/50">
                                   10:48 AM
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                   Sarah
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 ">
                                   updated profile
                                 </span>
                               </div>
 
                               <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                                <span className="text-[8px] font-mono text-black/45">
+                                <span className="text-[8px] font-mono text-white/50">
                                   10:45 AM
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                   Alex
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 ">
                                   joined organization
                                 </span>
                               </div>
 
                               <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                                <span className="text-[8px] font-mono text-black/45">
+                                <span className="text-[8px] font-mono text-white/50">
                                   10:42 AM
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                   Emma
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 ">
                                   revoked token
                                 </span>
                               </div>
 
                               <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                                <span className="text-[8px] font-mono text-black/45">
+                                <span className="text-[8px] font-mono text-white/50">
                                   10:38 AM
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                   Mike
                                 </span>
-                                <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                                <span className="text-[8px] font-mono text-white/50 ">
                                   enabled 2FA
                                 </span>
                               </div>
@@ -926,61 +926,61 @@ export default function ReadmeTab() {
                           <div className="flex gap-4 shrink-0">
 
                             <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                              <span className="text-[8px] font-mono text-black/45">
+                              <span className="text-[8px] font-mono text-white/50">
                                 10:50 AM
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                 John
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 ">
                                 created a session
                               </span>
                             </div>
 
                             <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                              <span className="text-[8px] font-mono text-black/45">
+                              <span className="text-[8px] font-mono text-white/50">
                                 10:48 AM
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                 Sarah
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 ">
                                 updated profile
                               </span>
                             </div>
 
                             <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                              <span className="text-[8px] font-mono text-black/45">
+                              <span className="text-[8px] font-mono text-white/50">
                                 10:45 AM
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                 Alex
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 ">
                                 joined organization
                               </span>
                             </div>
 
                             <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                              <span className="text-[8px] font-mono text-black/45">
+                              <span className="text-[8px] font-mono text-white/50">
                                 10:42 AM
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                 Emma
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 ">
                                 revoked token
                               </span>
                             </div>
 
                             <div className="flex items-center gap-1.5 shrink-0 h-5 whitespace-nowrap">
-                              <span className="text-[8px] font-mono text-black/45">
+                              <span className="text-[8px] font-mono text-white/50">
                                 10:38 AM
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/30 border-b border-dashed border-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 border-b border-dashed border-white/20">
                                 Mike
                               </span>
-                              <span className="text-[8px] font-mono text-black/45 dark:text-foreground/20">
+                              <span className="text-[8px] font-mono text-white/50 ">
                                 enabled 2FA
                               </span>
                             </div>
@@ -992,10 +992,10 @@ export default function ReadmeTab() {
                       </div>
                     </a>
 
-                    <span className="hidden md:block absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
-                    <span className="hidden md:block absolute top-1/3 left-2/3 -translate-x-1/2 -translate-y-1/2 font-mono -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
-                    <span className="hidden md:block absolute top-2/3 left-1/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
-                    <span className="hidden md:block absolute top-2/3 left-2/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-black/45 dark:text-foreground/20 select-none z-10">+</span>
+                    <span className="hidden md:block absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-white/50  select-none z-10">+</span>
+                    <span className="hidden md:block absolute top-1/3 left-2/3 -translate-x-1/2 -translate-y-1/2 font-mono -mt-[1px] -ml-[.5px] text-[10px] text-white/50  select-none z-10">+</span>
+                    <span className="hidden md:block absolute top-2/3 left-1/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-white/50  select-none z-10">+</span>
+                    <span className="hidden md:block absolute top-2/3 left-2/3 -translate-x-1/2 -translate-y-1/2 font-mono  -mt-[1px] -ml-[.5px] text-[10px] text-white/50  select-none z-10">+</span>
                   </div>
                 </div>
 

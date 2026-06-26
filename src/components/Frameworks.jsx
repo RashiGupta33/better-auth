@@ -34,19 +34,19 @@ export default function Framework() {
             </div >
 
             <div className="mt-8 mb-10">
-                <div className="border-r border-white/[0.1] bg-neutral-900/[0.01] overflow-hidden">
+                <div className="border-r border-white/[0.1] bg-black/[0.01] overflow-hidden">
                     <div className="flex flex-col lg:flex-row">
                         <div className="min-w-0 flex-1 min-h-[320px] sm:min-h-[360px] lg:h-[400px] overflow-hidden">
                             <div className="pb-5 h-full" style={{ opacity: 1, transform: "none" }}>
                                 <div className="relative">
                                     <div className="absolute -inset-4 bg-gradient-to-br from-foreground/[0.02] via-transparent to-foreground/[0.02] rounded-2xl blur-xl pointer-events-none dark:from-foreground/[0.03] dark:to-foreground/[0.03]"></div>
-                                    <div className="relative overflow-hidden bg-neutral-900">
+                                    <div className="relative overflow-hidden bg-black">
                                         <div className="px-3 py-1.5">
                                             <span className="inline-flex items-center gap-1.5 text-[11px] font-mono text-neutral-400">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 32 32"><rect width="28" height="28" x="2" y="2" fill="currentColor" opacity="0.3" rx="1.312"></rect><path fill="currentColor" fillRule="evenodd" d="M18.245 23.759v3.068a6.5 6.5 0 0 0 1.764.575a11.6 11.6 0 0 0 2.146.192a10 10 0 0 0 2.088-.211a5.1 5.1 0 0 0 1.735-.7a3.54 3.54 0 0 0 1.181-1.266a4.47 4.47 0 0 0 .186-3.394a3.4 3.4 0 0 0-.717-1.117a5.2 5.2 0 0 0-1.123-.877a12 12 0 0 0-1.477-.734q-.6-.249-1.08-.484a5.5 5.5 0 0 1-.813-.479a2.1 2.1 0 0 1-.516-.518a1.1 1.1 0 0 1-.181-.618a1.04 1.04 0 0 1 .162-.571a1.4 1.4 0 0 1 .459-.436a2.4 2.4 0 0 1 .726-.283a4.2 4.2 0 0 1 .956-.1a6 6 0 0 1 .808.058a6 6 0 0 1 .856.177a6 6 0 0 1 .836.3a4.7 4.7 0 0 1 .751.422V13.9a7.5 7.5 0 0 0-1.525-.4a12.4 12.4 0 0 0-1.9-.129a8.8 8.8 0 0 0-2.064.235a5.2 5.2 0 0 0-1.716.733a3.66 3.66 0 0 0-1.171 1.271a3.73 3.73 0 0 0-.431 1.845a3.6 3.6 0 0 0 .789 2.34a6 6 0 0 0 2.395 1.639q.63.26 1.175.509a6.5 6.5 0 0 1 .942.517a2.5 2.5 0 0 1 .626.585a1.2 1.2 0 0 1 .23.719a1.1 1.1 0 0 1-.144.552a1.3 1.3 0 0 1-.435.441a2.4 2.4 0 0 1-.726.292a4.4 4.4 0 0 1-1.018.105a5.8 5.8 0 0 1-1.969-.35a5.9 5.9 0 0 1-1.805-1.045m-5.154-7.638h4v-2.527H5.938v2.527H9.92v11.254h3.171Z"></path></svg>auth.ts</span>
                                         </div>
                                         <div className="relative h-[310px] overflow-hidden">
-                                            <figure dir="ltr" className="group shiki relative outline-none not-prose overflow-hidden text-sm shiki shiki-themes github-light github-dark border-0 rounded-none my-0 shadow-none bg-neutral-900 [&_div]:bg-neutral-900 [&_div]:text-[12px]" tabindex={0} data-line-numbers="true" style={{
+                                            <figure dir="ltr" className="group shiki relative outline-none not-prose overflow-hidden text-sm shiki shiki-themes github-light github-dark border-0 rounded-none my-0 shadow-none bg-black [&_div]:bg-black [&_div]:text-[12px]" tabindex={0} data-line-numbers="true" style={{
                                                 "--shiki-light": "#24292e",
                                                 "--shiki-dark": "#e1e4e8",
                                                 "--shiki-light-bg": "#fff",
@@ -322,7 +322,7 @@ export default function Framework() {
                             </div>
                         </div>
 
-                        <div className="flex flex-row lg:flex-col lg:w-56 lg:shrink-0 border-t lg:border-t-0 lg:border-l border-white/[0.03] bg-neutral-900 overflow-x-auto lg:overflow-visible">
+                        <div className="flex flex-row lg:flex-col lg:w-56 lg:shrink-0 border-t lg:border-t-0 lg:border-l border-white/[0.03] bg-black overflow-x-auto lg:overflow-visible">
                             <button
                                 type="button"
                                 className="relative flex-1 lg:flex-none text-left px-3 sm:px-4 py-2.5 sm:py-3 text-[10px] sm:text-[11px] lg:text-xs font-mono tracking-wider uppercase transition-colors border-r lg:border-r-0 lg:border-b last:border-r-0 lg:last:border-b-0 border-white/[0.08] whitespace-nowrap lg:whitespace-normal text-neutral-300 bg-white/5"
@@ -376,10 +376,10 @@ export default function Framework() {
                     </a>
                     <div className="relative overflow-hidden">
                         {/* Left Fade */}
-                        <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-neutral-950 to-transparent" />
+                        <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-black to-transparent" />
 
                         {/* Right Fade */}
-                        <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-neutral-950 to-transparent" />
+                        <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-black to-transparent" />
                         <div className="flex animate-[marquee_40s_linear_infinite] mb-1.5 text-neutral-500">
                             {marqueeItems.map((item, index) => (
                                 <span

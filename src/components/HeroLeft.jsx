@@ -16,7 +16,7 @@ export default function HeroLeft() {
         lg:px-7
         lg:sticky
         lg:top-[44px]
-        bg-neutral-950
+        bg-black
         overflow-hidden
       "
     >

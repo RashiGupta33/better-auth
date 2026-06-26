@@ -2,7 +2,7 @@ import logo from "../assets/vite.svg";
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-[99] flex items-start bg-neutral-950">
+    <div className="fixed top-0 left-0 right-0 z-[99] flex items-start bg-black">
       {/* Left Logo Panel */}
       <div className="w-[40%] h-[44px] hidden lg:flex items-stretch shrink-0 border-r border-white/[0.06] px-7">
         <a
@@ -19,7 +19,7 @@ export default function Navbar() {
       </div>
 
       {/* Right Navigation */}
-      <div className="flex-1 hidden lg:flex h-[44px] border-b border-white/[0.06] bg-neutral-950 min-w-0">
+      <div className="flex-1 hidden lg:flex h-[44px] border-b border-white/[0.06] bg-black min-w-0">
         <NavItem active>README</NavItem>
         <NavItem>DOCS</NavItem>
         <NavDropdown>PRODUCTS</NavDropdown>
@@ -83,7 +83,7 @@ function MobileMenu() {
         </svg>
       </summary>
       {/* Dropdown menu */}
-      <div className="absolute right-0 top-full mt-1 w-44 bg-neutral-900 border border-white/[0.08] shadow-md z-50">
+      <div className="absolute right-0 top-full mt-1 w-44 bg-black border border-white/[0.08] shadow-md z-50">
         {[
           { label: "README", active: true },
           { label: "DOCS" },

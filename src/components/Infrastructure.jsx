@@ -233,7 +233,7 @@ export default function Infrastructure() {
                 </div>
             </div>
 
-            <div className="relative z-10 flex items-center justify-between mt-4 px-6 py-5 border border-dashed border-white/20 bg-neutral-900/[0.01]">
+            <div className="relative z-10 flex items-center justify-between mt-4 px-6 py-5 border border-dashed border-white/20 bg-black/[0.01]">
                 <div
                     className="absolute top-0 bottom-0 z-0 pointer-events-none"
                     // style={{
@@ -334,16 +334,19 @@ export default function Infrastructure() {
                         <span className="text-neutral-200 font-medium tabular-nums">
                             {" "} 874+</span> contributors.
                     </p>
-                    <img
-                        src={contributors}
-                        alt="Contributors"
-                        className="block w-full h-auto select-none"
-                        draggable={false}
-                    />
+                    <div className="relative">
+                        <img
+                            src={contributors}
+                            alt="Contributors"
+                            className="block w-full h-auto select-none"
+                            draggable={false}
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+                    </div>
                 </div>
 
                 <div className="relative space-y-6">
-                    <p className="text-center text-lg text-balance text-neutral-400 tracking-tight">
+                    <p className="text-center text-lg text-balance text-neutral-400 tracking-tight mt-20">
                         Roll your own auth with confidence in minutes.
                     </p>
 
