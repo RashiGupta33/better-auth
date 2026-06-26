@@ -33,10 +33,10 @@ export default function Navbar() {
             items-center
             gap-2
             px-5
-            bg-black
-            !text-white
+            bg-white
+            !text-black
             font-mono
-            text-xs
+            text-sm
             tracking-wider
             uppercase
             shrink-0
@@ -95,7 +95,7 @@ function MobileMenu() {
             key={label}
             href="#"
             className={`block px-4 py-2.5 font-mono text-[11px] tracking-wider uppercase border-b border-white/[0.06] transition-colors
-              ${active ? "text-white font-semibold" : "text-white/60 hover:text-white hover:bg-neutral-800"}`}
+              ${active ? "text-white/60 font-semibold" : "text-white/60 hover:text-white hover:bg-neutral-800"}`}
           >
             {label}
           </a>
@@ -123,7 +123,7 @@ function NavItem({ children, active = false }) {
           tracking-wider
           transition-colors
           ${active
-            ? "border-b-2 border-b-white text-white"
+            ? "border-b-2 border-b-white text-white/60"
             : "text-white/60 hover:text-white"
           }
         `}

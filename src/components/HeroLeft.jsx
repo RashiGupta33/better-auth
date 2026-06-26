@@ -165,7 +165,7 @@ export default function HeroLeft() {
           <div className="flex flex-wrap items-center gap-2 sm:gap-3 pt-2 sm:pt-4 pointer-events-auto">
             <a
               href="#"
-              className="inline-flex items-center px-4 py-2 bg-black !text-white text-[13px]"
+              className="inline-flex items-center px-4 py-2 bg-white !text-black text-[13px]"
             >
               Get Started
             </a>
